@@ -16,7 +16,7 @@ public class Main {
         // Shuffle the deck
         deck.shuffle();
 
-        // Draw two cards from the top of the deck
+        // Draw two cards from the top of the deck.
         Card card1 = deck.drawCard();
         Card card2 = deck.drawCard();
         System.out.println("You drew the " + card1 + " and the " + card2 + ".");
