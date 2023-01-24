@@ -28,7 +28,7 @@ public class Wrapperexample {
 
     }
 
-    When use pass obj,  the reference value is passed
+    //When use pass obj,  the reference value is passed
     static void swap(Integer a , Integer b){
         Integer temp = a;
         a = b;
