@@ -2,54 +2,49 @@ package practiceMyself;
 
 public class TestCircle {
     public static void main(String[] args){
-        circle c1 = new circle(20, "red");
-        System.out.println("The radius is: " + c1.radius);
-        System.out.println("The radius is: " + c1.getRadius());
-        System.out.println("The coloe is: " + c1.color);
-        System.out.println("The area is: " + c1.getArea());
-        System.out.println("The circumference is: " + c1.getCircumference());
+
+        circle c1 = new circle(); //calling from empty constructor
+        c1.setColor("black");
+        c1.setRadius(2.0);
+        System.out.println("C1");
         System.out.println(c1.toString());
+        System.out.println("Area: " + c1.getArea());
+        System.out.println("---------------------------------");
 
 
-        System.out.println("-----------------------");
-        circle c2 = new circle();
-        System.out.println("THe radius is: " + c2.radius);
-        System.out.println("THe color is: " + c2.color);
-        System.out.println("The radius is: " + c2.getRadius());
-        //changing color
-        c2.color = "blue";
-        System.out.println("The color after changing is : " + c2.color);
+        circle c2 = new circle(3.5); //constructor with radius //color is default red
+        System.out.println("C2");
+        System.out.println(c2.toString());
+        System.out.println("Area: " + c2.getArea());
+        System.out.println("---------------------------------");
 
 
-        System.out.println("-----------------------");
-
-        circle c3 = new circle(c1); //copy constructor
-        System.out.println("The radius is: " + c3.radius);
-        System.out.println("The color is: " + c3.color);
-        System.out.println("The radius is: " + c3.getRadius());
-        System.out.println("The area is: " + c3.getArea());
-        System.out.println("The circumference is: " + c3.getCircumference());
+        circle c3 = new circle(4,"blue"); //constructor with radius and color
+        System.out.println("C3");
         System.out.println(c3.toString());
-        System.out.println("-----------------------");
-        c1.radius = 10;
-        System.out.println("The radius is: " + c1.getRadius());
-        System.out.println("The radius is: " + c3.getRadius()); //will not change because it is a copy of c1
-        System.out.println("The area is: " + c1.getArea());
-        System.out.println("The area is: " + c3.getArea());
+        System.out.println("Area: " + c3.getArea());
+        System.out.println("---------------------------------");
 
 
-        System.out.println("-----------------------");
-        //empty constructor
-        circle c4 = new circle();
-
-        //calling getter and setter
-        c4.setRadius(10);
-        System.out.println("The radius is: " + c4.getRadius());
-        c4.setArea(100);
-        System.out.println("The radius is: " + c4.getRadius());
-        System.out.println("The area is: " + c4.getArea());
-        System.out.println("The circumference is: " + c4.getCircumference());
+        circle c4 = new circle(c3); //copy constructor
+        System.out.println("C4");
         System.out.println(c4.toString());
+        System.out.println("Area: " + c4.getArea());
+        System.out.println("---------------------------------");
+
+
+
+        System.out.println("Testing the copy constructor");
+        System.out.println("Changing the value of C1");
+        c1.setColor("green");
+        c1.setRadius(5.0);
+        System.out.println("C1 After changing: " + c1.getColor() + " " + c1.getRadius());
+        System.out.println("C4 After changing: " + c4.getColor() + " " + c4.getRadius());
+
+
+
+
+
 
 
 
