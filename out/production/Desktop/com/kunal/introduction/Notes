@@ -66,3 +66,9 @@ For eg:
 final Student kunal = new Student();
 kunal.name = “Jess”; // You can change value
 kunal = other object // You can’t reassign it 
+
+
+When you use the this keyword within a constructor to call another constructor, 
+it must specify the exact constructor to be called, by providing the appropriate number
+and type of arguments. The constructor to be called is determined by matching the number and type of 
+arguments with the parameters of the constructors defined in the class.

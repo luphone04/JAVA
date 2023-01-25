@@ -11,8 +11,6 @@ class circle{
     public circle(){ //
 
     }
-
-
     public circle(double radius){ //constructor with radius //this is a constructor
         this.radius = radius;
         color = "red";
