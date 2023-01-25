@@ -1,51 +1,58 @@
 package practiceMyself;
 
-public class lll {
-    public static void main(String[] args){
-    }
-}
 class circle{
      double radius;
      String color;
+
+
+//    public circle(){ //calling from empty constructor
+//        this(23); //will choose the other constructor by matching the argument
+//    }
+    public circle(){ //
+
+    }
+
+
+    public circle(double radius){ //constructor with radius //this is a constructor
+        this.radius = radius;
+        color = "red";
+    }
+
     public circle(double radius , String color){ //default constructor
         this.radius = radius;
         this.color = color;
     }
 
-    public circle(){
-
+    circle(circle other){ //copy constructor
+        this.radius = other.radius;
+        this.color = other.color;
     }
-
-    public circle(double radius){ //constructor with radius
-        this.radius = radius;
-        color = "red";
-    }
-
-    circle(circle other){
-        radius = other.radius;
-        color = other.color;
-    }
-
 
     public double getRadius(){
         return radius;
     }
-    public double getArea(){
-        return radius * radius * Math.PI;
+
+    public String getColor(){
+        return color;
     }
+
     public void setRadius(double radius){
         this.radius = radius;
     }
-    public void setArea(double area){
-        this.radius = Math.sqrt(area / Math.PI);     // this is the formula for area of a circle // this.radius is the radius of the circle
+
+    public void setColor(String color){
+        this.color = color;
     }
-    public double getCircumference(){
-        return 2 * Math.PI * radius;
-    }
+
+
+
     public String toString(){
-        return "Circle[radius=" + radius + "color=" + color + "]";
+        return "Circle[radius = " + radius + " color = " + color + "]";
     }
+
+    public double getArea(){
+        return Math.PI * radius * radius;
+    }
+
 }
-
-
 
