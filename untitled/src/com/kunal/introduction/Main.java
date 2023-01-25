@@ -24,20 +24,43 @@ public class Main {
 //        kunal.marks = 90.0f;
 //        kunal.changeName("Kunal");
 //        kunal.greeting();
-        System.out.println(kunal.rno);
-        System.out.println(kunal.name);
-        System.out.println(kunal.marks);
+//        System.out.println(kunal.rno);
+//        System.out.println(kunal.name);
+//        System.out.println(kunal.marks);
+//
+//        Student random = new Student(kunal); // this other variable will be replace will kunal
+//        System.out.println(random.name);
+//
+//        Student random2 = new Student(); // this other variable will be replace will kunal // this is default constructor
+//        System.out.println(random2.name);
 
-        Student random = new Student(kunal); // this other variable will be replace will kunal
-        System.out.println(random.name);
-
-        Student random2 = new Student(); // this other variable will be replace will kunal // this is default constructor
-        System.out.println(random2.name);
-
-        Student one = new Student();
+        Student one = new Student(); // this other variable will be replace will kunal // this is default constructor
         Student two = one;
         one.name = "Something Something";
         System.out.println(two.name);
+
+        //testing copy contructor
+        Student three = new Student(one); // this is copy constructor // this will copy the value of one to three // this is not a reference // this is a copy
+        System.out.println(three.name);
+        one.name = "Something Something else";
+        System.out.println(three.name);// this will not change because it is a copy
+        System.out.println(one.name);
+        System.out.println(two.name);
+        System.out.println(three.name);//
+
+        //testing empty constructor
+        Student four = new Student();
+        System.out.println(four.name);
+        System.out.println(four.rno);
+        System.out.println(four.marks);
+        four.name = "Kunal";
+        four.rno = 1;
+        four.marks = 99.9f;
+        System.out.println(four.name);
+        System.out.println(four.rno);
+        System.out.println(four.marks);
+
+
 
     }
 }
@@ -48,10 +71,10 @@ class Student{
     //We need one word to access every object
     void greeting(){
         System.out.println("Hello" + name);
-    }
+    } // this is a method
     void changeName(String newName){
         name = newName;
-    }
+    } // this is a method
 
     //constructor
     //All type of constructor
@@ -94,11 +117,19 @@ class Student{
         //this keyword is used to call a constructor from another constructor
         //calling from parameterized constructor
         //internally calling the parameterized constructor : newStudent()
-        this(13 , "Jessica" , 100f);
+        this(13 , "Jessica" , 100f); //
     }
     Student(int roll, String name, float marks) { //parameterized constructor
         this.rno = roll;
         this.name = name;
         this.marks = marks;
     }
+
+    //constructor overloading
+    //same name but different parameters
+    //this is how you call a constructor from another constructor
+    //this keyword is used to call a constructor from another constructor
+    //calling from default constructor
+    //internally calling the default constructor : newStudent()
+
 }

@@ -1,0 +1,68 @@
+OOP
+
+- Key word “new” is used to create new object 
+- The object that are inside your object is called “instance variable
+- ``` 
+- class Student{
+-     int rno;
+-     String name;
+-     float marks;
+- }
+- ```
+- The “Student” is a data type 
+- When testing or referencing,  you start with the data type…. Here Student then variable name
+- Student student1; //declaring an object student to Student type 
+- new Student(); //new operator allocate a memory at random and return a reference to it 
+
+- Dynamic memory allocation (“new” keyword) Memory in ram or whatever will be allocated(နေရာချထား) when ur program is running 
+- 
+
+- When you create an object of the class, the class is being instantiated ( to call the constructor of a class that creates an instance or object of the type of that class. )
+
+Constructor
+- Define when your object is created
+- new Student(); the thing beside “new” is called default constructor. 
+- It is a special function that run when you create an object and it allocate some variable as you like. Bc it is function it will have some arguments. If it doesn’t have, it is called by default constructor
+
+- Student(){
+-     
+- }
+- Above the constructor is created 
+
+This.  (For accessing attribute of object and constructor,  you need this. Or else attribute won’t modified)
+- In or
+- In order for you to access to object inside the template, 
+- Example
+- this.name; 
+- When calling it in main , Student kunal = new Student();. And program read the constructor “Student()”
+- The variable “kunal” will replace “this”. So kunal.name
+- It’s just replacing the name of the reference variable (Just Kunal )
+- Basically mean what object you are referring to 
+
+
+
+COPY CONSTRUCTOR  Student (Student other){ //copy constructor (copying the values of one object to another)
+    this.name = other.name; //basically random.name = kunal.name
+    this.rno = other.rno; // random.rno = kunal.rno
+    this.marks = other.marks; // random.marks = kunal.marks
+}
+
+Student random = new Student(kunal); // this other variable will be replace will kunal
+
+
+WHY WE DON”T USE “This” in primitive data types?
+- Primitive are not object in java
+- The "new" keyword is used to create an instance of a class, but primitive data types are not classes, they are basic data types built into the language. Therefore, the "new" keyword is not used with primitive data types because it is not necessary.
+- 
+
+FINAL
+- A keyword to prevent your content to be modified 
+- final int increase = 2;
+- You should always initialize the final variable when it is declared(Always initialize while declaring)
+- By above I meant final int num;(wrong)…..final int num = 10;(right)
+- Only for primitive data types (not instance variables, object ) 
+
+For eg:
+final Student kunal = new Student();
+kunal.name = “Jess”; // You can change value
+kunal = other object // You can’t reassign it 
