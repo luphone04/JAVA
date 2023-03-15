@@ -61,10 +61,7 @@ public class Time {
         return this; //why we use this? because we need to return time object not void or int or string or etc so we use this to return time object and we can use it in main method
     }
 
-    public Time previousSecond(){
-        second--;
-        if(second < 0)
-    }
+
 
 
 }

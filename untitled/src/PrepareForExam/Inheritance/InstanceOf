@@ -1,0 +1,36 @@
+In real life, "instance of" can be understood as "an example of" or "a specific occurrence of."
+
+Class: Car
+Instances: Toyota Camry, Honda Civic, Ford Mustang
+
+class Animal {
+    // ...
+}
+
+class Dog extends Animal {
+    // ...
+}
+
+class Cat extends Animal {
+    // ...
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        System.out.println(myAnimal instanceof Animal); // Output: true
+        System.out.println(myAnimal instanceof Dog);    // Output: false
+        System.out.println(myAnimal instanceof Cat);    // Output: false
+
+        System.out.println(myDog instanceof Animal);    // Output: true
+        System.out.println(myDog instanceof Dog);       // Output: true
+        System.out.println(myDog instanceof Cat);       // Output: false
+
+        System.out.println(myCat instanceof Animal);    // Output: true
+        System.out.println(myCat instanceof Dog);       // Output: false
+        System.out.println(myCat instanceof Cat);       // Output: true
+    }
+}
