@@ -1,0 +1,38 @@
+##ASSOCIATION
+
+-  instances of one class are connected to instances of another class
+- there is a relationship between the objects of the two classes
+-  an object of one class has some knowledge of or interaction with an object of another class.
+
+Organization: By associating the Author with the Book class, you make it clear that there is a relationship between
+them. This helps you structure your code in a more organized and logical manner, making it easier to understand and
+maintain.
+
+Encapsulation: By declaring the author variable private, you ensure that it cannot be accessed directly from outside
+the Book class. This adheres to the encapsulation principle of object-oriented programming, which promotes keeping the
+ internal state of an object hidden from the outside world.
+
+Flexibility: By representing the relationship between books and authors using an association, you can easily change the
+ implementation details of either class without affecting the other. For example, you could add new attributes or
+ methods to the Author class without having to modify the Book class.
+
+Reusability: Associations promote the reusability of code. In the given example, the Author class can be reused in other
+parts of the application where authors are needed, such as articles or publications. By creating associations between
+classes, you can create more modular and reusable components in your application.
+
+
+One-to-One: In a one-to-one association, one instance of a class is associated with exactly one instance of another
+class. For example, a Driver class could be associated with a License class, where each driver has exactly one license
+and each license is associated with exactly one driver.
+
+One-to-Many: In a one-to-many association, one instance of a class is associated with multiple instances of another
+class. For example, a Teacher class could be associated with a Student class, where a teacher can have multiple
+students but each student has only one teacher.
+
+Many-to-One: This is the reverse of one-to-many association, where multiple instances of a class are associated with
+one instance of another class. For example, a Child class could be associated with a Parent class, where multiple
+children can have the same parent.
+
+Many-to-Many: In a many-to-many association, multiple instances of a class are associated with multiple instances of
+another class. For example, a Student class could be associated with a Course class, where a student can be enrolled
+in multiple courses, and each course can have multiple students enrolled.

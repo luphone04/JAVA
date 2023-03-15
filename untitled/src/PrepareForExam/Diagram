@@ -1,0 +1,12 @@
+
+Class Diagram: Class diagrams show the relationships between classes in a system, including inheritance, composition,
+and aggregation. They display the class name, attributes, and methods, as well as the relationships between classes.
+
+Notation:
+
+Class: Rectangle with class name, attributes, and methods.
+Inheritance: Solid line with a hollow arrowhead pointing to the base class.
+Composition: Solid line with a filled diamond pointing to the composite class.
+Aggregation: Solid line with a hollow diamond pointing to the aggregate class.
+Association: Solid line connecting two classes.
+Interface:  A dashed line with a hollow arrowhead pointing from the implementing class to the interface.

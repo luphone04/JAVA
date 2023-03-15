@@ -9,6 +9,10 @@ package PrepareForExam.Abstraction;
 
 interface Drawable {
     void draw();
+
+    static void printMessage() {
+        System.out.println("This is a static method in the Drawable interface");
+    }
 }
 
 class Circle implements Drawable {
@@ -27,6 +31,7 @@ class Mains {
         Circle myCircle = new Circle();
         myCircle.radius(); // Output: The radius of the circle is 5
         myCircle.draw();   // Output: Drawing a circle
+        Drawable.printMessage(); // Output: This is a static method in the Drawable interface
     }
 }
 
