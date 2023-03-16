@@ -1,0 +1,12 @@
+
+- Aggregation is a specific type of association that represents a "whole-part" or "has-a" relationship between classes.
+
+-  In aggregation, the whole class (container class) has a reference to the part class (contained class), but the
+part class can still exist independently of the whole class. The lifetime of the part class is not tied to the lifetime
+of the whole class.
+
+- Aggregation is often used to represent real-world relationships, such as a university and its departments or a c
+ar and its engine.
+
+- The key takeaway is that aggregation represents a "has-a" relationship between classes, where the whole class has
+a reference to the part class, but the part class can still exist independently.

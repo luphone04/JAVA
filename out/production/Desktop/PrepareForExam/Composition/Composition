@@ -1,0 +1,4 @@
+composition is a way to build strong relationships between objects. With composition, when an object is destroyed,
+ its parts (or "components") are destroyed too because they are tightly connected and cannot exist independently.
+
+
