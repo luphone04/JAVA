@@ -19,10 +19,10 @@ public class AnInt implements Complement {
     @Override
     public void takeComplement() {
         String temp = "";
-        String temp2 = Integer.toBinaryString(number);
-        for(int i = 0; i < temp2.length()  ; i++){
-            char c = temp2.charAt(i);
-            if(c == '0'){
+        String temp2 = Integer.toBinaryString(number); //10100101
+        for(int i = 0; i < temp2.length()  ; i++){ //
+            char c = temp2.charAt(i); //
+            if(c == '0'){ //
                 temp += 1;
             }else{
                 temp += 0;

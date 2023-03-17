@@ -40,10 +40,10 @@ public class EnBMessage extends Message implements ICipher {
         int ascii;
         int new_ascii;
 
-        for(int i = 0 ; i < getMessage().length(); i++){
-            a = getMessage().charAt(i);
-            ascii = a;
-            new_ascii = a + 2;
+        for(int i = 0 ; i < getMessage().length(); i++){ //Hello
+            a = getMessage().charAt(i); //H
+            ascii = a; // //1001
+            new_ascii = a + 2; //
             out+= (char)new_ascii;
         }
         setMod_message(out);
