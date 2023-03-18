@@ -30,6 +30,5 @@ public class AString implements Complement{
             }
         }
         setStr(out);
-
     }
 }

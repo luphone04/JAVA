@@ -22,13 +22,13 @@ public class MultiDimension {
             }
         }
 
-        //printing normal
-//        for (int[] ints : arr) {
-//            for (int anInt : ints) {
-//                System.out.print(anInt + " ");
-//            }
-//            System.out.println();
-//        }
+//        printing normal
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
 
         //print with toString
         for (int[] ints : arr) {
