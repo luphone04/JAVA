@@ -10,3 +10,11 @@ Composition: Solid line with a filled diamond pointing to the composite class.
 Aggregation: Solid line with a hollow diamond pointing to the aggregate class.
 Association: Solid line connecting two classes.
 Interface:  A dashed line with a hollow arrowhead pointing from the implementing class to the interface.
+
+//Integer.toString() to convert from int to String
+//Integer.parseInt() convert String to int
+//Character.getNumericValue(c) convert char to int.
+//(char) num ---- convert int to char
+// Integer.toBinaryString() returnbinary number 1010101 as a String
+//Character.isDigit(char) check if the char form int is int.
+//Character.isLetter(char) tests if a char is a letter.

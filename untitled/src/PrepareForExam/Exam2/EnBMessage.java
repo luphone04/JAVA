@@ -42,7 +42,7 @@ public class EnBMessage extends Message implements ICipher {
 
         for(int i = 0 ; i < getMessage().length(); i++){ //Hello
             a = getMessage().charAt(i); //H
-            ascii = a; // //1001
+            ascii = a; // 97
             new_ascii = a + 2; //
             out+= (char)new_ascii;
         }
